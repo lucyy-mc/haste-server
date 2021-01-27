@@ -1,3 +1,8 @@
+# About
+
+This site is basically Haste (https://github.com/seejohnrun/haste-server), I've
+just made a couple of stylistic changes.
+
 # Haste
 
 Sharing code is a good thing, and it should be _really_ easy to do it.
