@@ -1,0 +1,92 @@
+#box1, #box2, #box3 {
+    background: #0003 !important;
+}
+body {
+    color: #f7e6ff;
+}
+
+a {
+    color: #f7e6ff;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #172035;
+    color: #f7e6ff;
+  }
+  
+  .hljs-comment,
+  .hljs-quote {
+    color: #998a99;
+  }
+  
+  /* Lucy Green */
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-addition {
+    color: #99ffcc;
+  }
+  
+  /* Lucy Cyan */
+  .hljs-number,
+  .hljs-string,
+  .hljs-meta .hljs-meta-string,
+  .hljs-literal,
+  .hljs-doctag,
+  .hljs-regexp {
+    color: #99ffff;
+  }
+  
+  /* Lucy Blue */
+  .hljs-title,
+  .hljs-section,
+  .hljs-name,
+  .hljs-selector-id,
+  .hljs-selector-class {
+    color: #99b8ff;
+  }
+  
+  /* Lucy Yellow */
+  .hljs-attribute,
+  .hljs-attr,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-class .hljs-title,
+  .hljs-type {
+    color: #ffcc99;
+  }
+  
+  /* Lucy Magenta */
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-subst,
+  .hljs-meta,
+  .hljs-meta .hljs-keyword,
+  .hljs-selector-attr,
+  .hljs-selector-pseudo,
+  .hljs-link {
+    color: #f799ff;
+  }
+  
+  /* Lucy Red */
+  .hljs-built_in,
+  .hljs-deletion {
+    color: #ff9999;
+  }
+  
+  .hljs-formula {
+    background: #D9172035;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
+  
+  .hljs-strong {
+    font-weight: bold;
+  }
+  
