@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+code, textarea {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 12px !important;
+}
+
 #box1, #box2, #box3 {
-    background: #0003 !important;
+    background: #272727 !important;
 }
 body {
     color: #f7e6ff;
+    background: #2B2B2B !important;
 }
 
 a {
@@ -16,7 +24,6 @@ a {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: #172035;
     color: #f7e6ff;
   }
   
