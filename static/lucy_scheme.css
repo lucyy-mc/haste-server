@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-code, textarea {
+code, textarea, #box, #linenos {
   font-family: 'Roboto Mono', monospace !important;
   font-size: 12px !important;
 }
