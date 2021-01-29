@@ -39,14 +39,14 @@ a {
     color: #99ffcc;
   }
   
-  /* Lucy Cyan */
+  /* Lucy Red */
   .hljs-number,
   .hljs-string,
   .hljs-meta .hljs-meta-string,
   .hljs-literal,
   .hljs-doctag,
   .hljs-regexp {
-    color: #99ffff;
+    color: #ff9999;
   }
   
   /* Lucy Blue */
@@ -80,10 +80,10 @@ a {
     color: #f799ff;
   }
   
-  /* Lucy Red */
+  /* Lucy Aqua */
   .hljs-built_in,
   .hljs-deletion {
-    color: #ff9999;
+    color: #99ffff;
   }
   
   .hljs-formula {
