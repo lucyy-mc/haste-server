@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+code, textarea {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+.line-numbers .line-numbers-rows {
+    left: -4.2em;
+    border-right: none;
+
+}
+pre.prism-live {
+    background: #2B2B2B;
+}
+code[class*="language-"] {
+    color: #f7e6ff;
+    text-shadow: none;
+}
+
+textarea {
+    caret-color: #f7e6ff !important;
+    font: initial;
+    --selection-background: #45454d !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #998a99;
+}
+
+.token.annotation {
+    color: #f799ff !important;
+}
+.token.punctuation {
+	color: #998a99;
+}
+
+.token.namespace {
+	opacity: 1;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #ff9999;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #f7e6ff;
+    background: none;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #99ffcc;
+}
+
+.token.function {
+    color: #99b8ff;
+}
+.token.class-name {
+	color: #ffcc99;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #99ffff;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}

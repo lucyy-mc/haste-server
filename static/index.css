@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    color: #f7e6ff;
+    background: #2B2B2B;
+}
+
+.disabled {
+    color: #797380;
+}
+
+ion-icon:not(.disabled):hover {
+    color: #998a99;
+}
+
+.topbar {
+    height: 35px;
+    font-size: 20px;
+    background: #2f2f2f;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+}
+
+.topbar > * {
+    height: 100%;
+    margin-left:10px;
+}
+
+#dropdown {
+    font-family: sans-serif;
+    font-size: 14px;
+    align-items: center;
+    background-image: url("dropdown.svg"); 
+    background-position: right center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
+#dropdown > * {
+    height: 35px;
+    line-height: 35px;
+}
+
+#dropdown-content > * {
+    width: 100%;
+    background: #2f2f2f;
+    color: inherit;
+    border: none;
+}
+
+#dropdown-search {
+    border-bottom: 2px solid #222;
+}
+
+.hidden {
+    display: none;
+}

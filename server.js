@@ -11,7 +11,7 @@ var connect_rate_limit = require('connect-ratelimit');
 var DocumentHandler = require('./lib/document_handler');
 
 // Load the configuration and set some defaults
-const configPath = process.argv.length <= 2 ? 'config.js' : process.argv[2];
+const configPath = process.argv.length <= 2 ? 'config.json' : process.argv[2];
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 config.port = process.env.PORT || config.port || 7777;
 config.host = process.env.HOST || config.host || 'localhost';
@@ -147,6 +147,10 @@ app.use(connect_st({
 // so route it back to /
 app.use(route(function(router) {
   router.get('/:id', function(request, response, next) {
+    request.sturl = '/';
+    next();
+  });
+  router.get('/copy/:id', function(request, response, next) {
     request.sturl = '/';
     next();
   });

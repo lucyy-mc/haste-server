@@ -1,67 +1,30 @@
 <html>
-
-	<head>
-
-		<title>hastebin</title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="lucy_scheme.css"/>
-		<link rel="stylesheet" type="text/css" href="application.css"/>
-
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script type="text/javascript" src="highlight.min.js"></script>
-		<script type="text/javascript" src="application.min.js"></script>
-
-		<meta name="robots" content="noindex,nofollow"/>
-
-		<script type="text/javascript">
-			var app = null;
-			// Handle pops
-			var handlePop = function(evt) {
-				var path = evt.target.location.pathname;
-				if (path === '/') { app.newDocument(true); }
-				else { app.loadDocument(path.substring(1, path.length)); }
-			};
-			// Set up the pop state to handle loads, skipping the first load
-			// to make chrome behave like others:
-			// http://code.google.com/p/chromium/issues/detail?id=63040
-			setTimeout(function() {
-				window.onpopstate = function(evt) {
-					try { handlePop(evt); } catch(err) { /* not loaded yet */ }
-				};
-			}, 1000);
-			// Construct app and load initial path
-			$(function() {
-				app = new haste('hastebin', { twitter: true });
-				handlePop({ target: window });
-			});
-		</script>
-
-	</head>
-
-	<body>
-		<ul id="messages"></ul>
-
-		<div id="key">
-		  <div id="pointer" style="display:none;"></div>
-			<div id="box2">
-				<button class="save function button-picture">Save</button>
-				<button class="new function button-picture">New</button>
-				<button class="duplicate function button-picture">Duplicate & Edit</button>
-				<button class="raw function button-picture">Raw</button>
-			</div>
-			<div id="box3" style="display:none;">
-				<div class="label"></div>
-				<div class="shortcut"></div>
-			</div>
-			<div id="box1">
-				<a href="about.md">About</a>
-			</div>
-		</div>
-
-		<div id="linenos"></div>
-		<pre id="box" style="display:none;" class="hljs" tabindex="0"><code></code></pre>
-		<textarea spellcheck="false" style="display:none;"></textarea>
-
-	</body>
-
+    <head>
+        <link rel="stylesheet" href="/prism.css">
+        <link rel="stylesheet" href="/prism-live.css">
+        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="/lucy-prismjs.css">
+        <title>lucy's pretty pastebin</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <ion-icon id="button-new" onclick="newDocument()" name="document-outline" data-tooltip="New"></ion-icon>
+            <ion-icon id="button-copy" onclick="copyDocument()" name="copy-outline" data-tooltip="Copy"></ion-icon>
+            <ion-icon id="button-save" onclick="putDocument()" name="save-outline" data-tooltip="Save"></ion-icon>
+            <ion-icon id="button-link" onclick="copyLink()" name="link-outline" data-tooltip="Copy link"></ion-icon>
+           <div id="dropdown">
+                <div id="language" onclick="startSearch()">java</div>
+                <div id="dropdown-content" class="hidden">
+                    <input id="dropdown-search" oninput="search()">
+                    <div id="dropdown-inner"></div>
+                </div>
+            </div>
+        </div>
+        <textarea class="prism-live line-numbers language-java"> </textarea>
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+        <script src="/prism.js"></script>
+        <script src="/prism-live.js?load=css,markup,javascript,python,java"></script>
+        <script src="/index.js"></script>
+    </body>
 </html>
