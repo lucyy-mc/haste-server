@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    font-family: 'Roboto Mono', monospace !important;
+}
 body {
     margin: 0;
     color: #f7e6ff;
@@ -10,6 +14,27 @@ body {
 
 ion-icon:not(.disabled):hover {
     color: #998a99;
+}
+
+ion-icon {
+    height: 100%;
+}
+
+
+.icon:not(.disabled):hover .tooltip {
+    display: unset;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #3b3b3b;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    border-radius: 8px;
+    top: 40px;
+    left: 10px;
 }
 
 .topbar {
@@ -27,20 +52,29 @@ ion-icon:not(.disabled):hover {
     margin-left:10px;
 }
 
+#copy-link-indicator {
+    font-size: 14px;
+    line-height: 35px;
+}
+
 #dropdown {
     font-family: sans-serif;
     font-size: 14px;
-    align-items: center;
     background-image: url("dropdown.svg"); 
     background-position: right center;
     background-size: 16px;
     background-repeat: no-repeat;
-    width: 100px;
+    width: 150px;
 }
 
 #dropdown > * {
-    height: 35px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#language {
     line-height: 35px;
+    height: 35px;
 }
 
 #dropdown-content > * {

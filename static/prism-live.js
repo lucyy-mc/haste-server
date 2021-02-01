@@ -99,6 +99,7 @@ var _ = Prism.Live = class PrismLive {
 			},
 
 			keydown: evt => {
+				/*
 				if (evt.key == "Tab" && !evt.altKey) {
 					// Default is to move focus off the textarea
 					// this is never desirable in an editor
@@ -143,8 +144,8 @@ var _ = Prism.Live = class PrismLive {
 							this.insert(this.indent);
 						}
 					}
-				}
-				else if (_.pairs[evt.key]) {
+				} 
+				else */if (_.pairs[evt.key]) {
 					var other = _.pairs[evt.key];
 					this.wrapSelection({
 						before: evt.key,

@@ -1,30 +1,48 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/prism.css">
-        <link rel="stylesheet" href="/prism-live.css">
-        <link rel="stylesheet" href="/index.css">
-        <link rel="stylesheet" href="/lucy-prismjs.css">
-        <title>lucy's pretty pastebin</title>
-    </head>
-    <body>
-        <div class="topbar">
-            <ion-icon id="button-new" onclick="newDocument()" name="document-outline" data-tooltip="New"></ion-icon>
-            <ion-icon id="button-copy" onclick="copyDocument()" name="copy-outline" data-tooltip="Copy"></ion-icon>
-            <ion-icon id="button-save" onclick="putDocument()" name="save-outline" data-tooltip="Save"></ion-icon>
-            <ion-icon id="button-link" onclick="copyLink()" name="link-outline" data-tooltip="Copy link"></ion-icon>
-           <div id="dropdown">
-                <div id="language" onclick="startSearch()">java</div>
-                <div id="dropdown-content" class="hidden">
-                    <input id="dropdown-search" oninput="search()">
-                    <div id="dropdown-inner"></div>
-                </div>
+
+<head>
+    <link rel="stylesheet" href="/prism.css">
+    <link rel="stylesheet" href="/prism-live.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/lucy-prismjs.css">
+    <title>lucy's pretty pastebin</title>
+</head>
+
+<body>
+    <div onclick="endSearch()" style="width:100%;height:100%;position: absolute;"></div>
+    <div class="topbar">
+        <div class="icon">
+            <ion-icon id="button-new" onclick="newDocument()" name="document-outline">
+            </ion-icon>
+            <div class="tooltip">new (ctrl+shift+n)</div>
+        </div>
+        <div class="icon">
+            <ion-icon id="button-copy" onclick="copyDocument()" name="copy-outline"></ion-icon>
+            <div class="tooltip">copy (ctrl+d)</div>
+        </div>
+        <div class="icon">
+            <ion-icon id="button-save" onclick="putDocument()" name="save-outline"></ion-icon>
+            <div class="tooltip">save (ctrl+s)</div>
+        </div>
+        <div class="icon">
+            <ion-icon id="button-link" onclick="copyLink()" name="link-outline"></ion-icon>
+            <div class="tooltip">copy link (ctrl+shift+c)</div>
+        </div>
+        <div id="dropdown">
+            <div id="language" onclick="startSearch()">java</div>
+            <div id="dropdown-content" class="hidden">
+                <input id="dropdown-search" oninput="search()">
+                <div id="dropdown-inner"></div>
             </div>
         </div>
-        <textarea class="prism-live line-numbers language-java"> </textarea>
-        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-        <script src="/prism.js"></script>
-        <script src="/prism-live.js?load=css,markup,javascript,python,java"></script>
-        <script src="/index.js"></script>
-    </body>
+        <span id="copy-link-indicator" class="hidden">link copied!</span>
+    </div>
+    <textarea class="prism-live line-numbers language-java"> </textarea>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script src="/prism.js"></script>
+    <script src="/prism-live.js?load=css,markup,javascript,python,java"></script>
+    <script src="/index.js"></script>
+</body>
+
 </html>

@@ -1,6 +1,7 @@
 # lucy's pretty pastebin
+version 1.0.1
 
-hacked together by lucy (https://lucyy.me)
+messily hacked together by lucy (https://lucyy.me)
 
 # basic usage
 
