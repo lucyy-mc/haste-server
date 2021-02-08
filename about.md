@@ -1,7 +1,13 @@
 # lucy's pretty pastebin
-version 1.0.1
+version 1.0.2
 
 messily hacked together by lucy (https://lucyy.me)
+
+low-quality source available at https://git.lucyy.me/lucy/haste-server
+
+# latest changes
+- fixed space at the start of the box when pasting
+- added link to this page
 
 # basic usage
 
@@ -15,6 +21,6 @@ every language supported by prismjs is available
 
 # acknowledgements
 
-backend based on hastebin (https://github.com/seejohnrun/haste-server)
-using prismjs and prism-live for syntax highlighting (https://prismjs.com/)
-icons provided by ionicons (https://ionicons.com)
+- backend based on hastebin (https://github.com/seejohnrun/haste-server)
+- using prismjs and prism-live for syntax highlighting (https://prismjs.com/)
+- icons provided by ionicons (https://ionicons.com)
