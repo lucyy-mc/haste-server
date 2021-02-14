@@ -22,9 +22,10 @@ function search() {
 
     outElement.querySelectorAll("div").forEach(x => x.remove());
     if (input === "") {
-        for (let lang of ["java", "yaml", "html", "css", "javascript", "json", "python", "csharp", "[search for more]"]) {
+        for (let lang of ["java", "yaml", "html", "css", "javascript", "json", "python", "csharp"]) {
             outElement.innerHTML += `<div onclick="setLanguage('${lang}')">${lang}</div>`
         }
+	    outElement.innerHTML += `<div>[search for more]</div>`
         return;
     }
     for (let lang of languages) {

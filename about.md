@@ -1,13 +1,13 @@
 # lucy's pretty pastebin
-version 1.0.2
+version 1.0.3
 
 messily hacked together by lucy (https://lucyy.me)
 
 low-quality source available at https://git.lucyy.me/lucy/haste-server
 
 # latest changes
-- fixed space at the start of the box when pasting
-- added link to this page
+
+- fixed issue when selecting the "search for more" entry on the language select
 
 # basic usage
 
