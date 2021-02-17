@@ -1,5 +1,5 @@
 # lucy's pretty pastebin
-version 1.0.3
+version 1.0.4
 
 messily hacked together by lucy (https://lucyy.me)
 
@@ -7,7 +7,8 @@ low-quality source available at https://git.lucyy.me/lucy/haste-server
 
 # latest changes
 
-- fixed issue when selecting the "search for more" entry on the language select
+- disabled spellchecking when editing
+- added html meta
 
 # basic usage
 
