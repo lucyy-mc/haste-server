@@ -25,7 +25,7 @@ function search() {
         for (let lang of ["java", "yaml", "html", "css", "javascript", "json", "python", "csharp"]) {
             outElement.innerHTML += `<div onclick="setLanguage('${lang}')">${lang}</div>`
         }
-	    outElement.innerHTML += `<div>[search for more]</div>`
+        outElement.innerHTML += `<div>[search for more]</div>`
         return;
     }
     for (let lang of languages) {
@@ -168,10 +168,6 @@ window.onbeforeunload = function (e) {
             return msg;
         }
     }
-}
-document.onpaste = function (e) {
-    let element = document.querySelector("textarea");
-    if (element.value === " ") element.value = e.clipboardData.getData("text/plain");
 }
 
 // keybinds

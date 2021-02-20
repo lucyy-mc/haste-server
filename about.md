@@ -1,5 +1,5 @@
 # lucy's pretty pastebin
-version 1.0.4
+version 1.0.5
 
 messily hacked together by lucy (https://lucyy.me)
 
@@ -7,8 +7,8 @@ low-quality source available at https://git.lucyy.me/lucy/haste-server
 
 # latest changes
 
-- disabled spellchecking when editing
-- added html meta
+- fixed issue where pasting code would cause duplication
+- code cleanup
 
 # basic usage
 
