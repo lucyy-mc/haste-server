@@ -1,5 +1,6 @@
 /**
 	Prism Live: Code editor based on Prism.js
+ 	https://github.com/PrismJS/live
 	Works best in Chrome. Currently only very basic support in other browsers (no snippets, no shortcuts)
 	@author Lea Verou
 */

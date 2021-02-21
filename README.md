@@ -358,11 +358,15 @@ Here is a list of all the environment variables
 
 John Crepezzi <john.crepezzi@gmail.com>
 
+lucyy-mc fork frontend Lucy Poulton <lucy@poulton.xyz>
+
 ## License
 
 (The MIT License)
 
 Copyright © 2011-2012 John Crepezzi
+
+lucyy-mc fork frontend (static dir) Copyright © 2021 Lucy Poulton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the ‘Software’), to deal in
@@ -384,6 +388,6 @@ SOFTWARE
 
 ### Other components:
 
-* jQuery: MIT/GPL license
-* highlight.js: Copyright © 2006, Ivan Sagalaev
-* highlightjs-coffeescript: WTFPL - Copyright © 2011, Dmytrii Nagirniak
+* PrismJS - MIT license, Copyright © 2012 Lea Verou. https://github.com/PrismJS/prism
+* PrismJS Live - no explicit license given. https://github.com/PrismJS/live
+
