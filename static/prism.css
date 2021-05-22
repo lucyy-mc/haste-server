@@ -19,12 +19,12 @@ pre[class*="language-"], pre.prism-live {
 	background: #2B2B2B;
 }
 code[class*="language-"] {
-	color: #f7e6ff;
+	color: white;
 	text-shadow: none;
 }
 
 textarea {
-	caret-color: #f7e6ff !important;
+	caret-color: white !important;
 	font: initial;
 	--selection-background: #45454d !important;
 }
@@ -68,7 +68,7 @@ textarea {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #f7e6ff;
+	color: white;
 	background: none;
 }
 
